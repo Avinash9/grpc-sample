@@ -1,0 +1,8 @@
+grpc:
+  client:
+    passbook-service:
+      address: static://localhost:5556
+      negotiationType: plaintext
+    balance-service:
+      address: static://localhost:5555
+      negotiationType: plaintext

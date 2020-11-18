@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package ="com.sample.grpcsample.passbookService";
+
+
+
+message PassBookDTO{
+  string  txnAmount =1;
+  string  userId = 2;
+  int32 closingBalance =3 ;
+  string merchantName = 4;
+}
+
+message PassbookRequest{
+  string userId=1;
+}
+
+message PassbookResponseResponse
+{
+  repeated PassBookDTO passbookDTO =1;
+}
+
+service  PassbookService{
+  rpc getTransactionHistory(PassbookRequest) returns (PassbookResponseResponse);
+}
