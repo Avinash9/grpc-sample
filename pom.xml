@@ -8,6 +8,7 @@
 		<module>balanceService</module>
 		<module>PassbookService</module>
 		<module>clientService</module>
+		<module>benchMark</module>
 		<module>test</module>
 	</modules>
     <parent>
